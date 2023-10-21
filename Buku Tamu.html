@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Buku Tamu</h2>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Artikel.html">Artikel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Daftar Barang.html">Daftar Barang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Buku Tamu.html">Buku Tamu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Jadwal Kuliah.html">Jadwal Kuliah</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Pendidikan.html">Pendidikan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://tik.ft.unm.ac.id">JTIK</a>
+            </li>
+        </ul>
+        <hr>
+    <div class="container">
+        <h2>Form Buku Tamu</h2>
+        <form>
+            <label for="nama_lengkap">Nama Lengkap:</label>
+            <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="L" checked>
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="P">
+            <label for="perempuan">Perempuan</label>
+
+            <label for="alamat">Alamat Tinggal:</label>
+            <input type="text" id="alamat" name="alamat" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Aktif Pada Sosial Media:</label>
+            <input type="checkbox" id="facebook" name="facebook" value="Ya" checked>
+            <label for="facebook">Facebook</label>
+            <input type="checkbox" id="twitter" name="twitter" value="Ya">
+            <label for="twitter">Twitter</label>
+            <input type="checkbox" id="instagram" name="instagram" value="Ya">
+            <label for="instagram">Instagram</label>
+            <input type="checkbox" id="path" name="path" value="Ya">
+            <label for="path">Path</label>
+
+            <label for="info">Mengetahui Ini Dari:</label>
+            <select id="info" name="info" required>
+                <option value="web">Web</option>
+                <option value="surat kabar">Surat Kabar</option>
+                <option value="teman kerabat">Teman Kerabat</option>
+                <option value="browsing internet">Browsing Internet</option>
+            </select>
+
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

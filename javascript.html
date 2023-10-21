@@ -1,0 +1,72 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Beranda</h2>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Artikel.html">Artikel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="daftar_barang.html">Daftar Barang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="buku_tamu.html">Buku Tamu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jadwal_kuliah.html">Jadwal Kuliah</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Pendidikan.html">Pendidikan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://tik.ft.unm.ac.id">JTIK</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript.html">Java Script</a>
+            </li>
+        </ul>
+        <hr>
+        <h2>Menghitung Luas Persegi Panjang</h2>
+        <button onclick="hitungLuas()">Hitung Luas</button>
+        
+        <p id="luasPersegiPanjang"></p>
+        
+        <h2>Memeriksa Angka Positif, Negatif, atau Nol</h2>
+        <input type="number" id="angka" placeholder="Masukkan angka">
+        <button onclick="cekAngka()">Cek</button>
+        
+        <p id="hasilPengecekan"></p>
+        
+        <script>
+            function hitungLuas() {
+                var panjang = parseFloat(prompt("Masukkan panjang persegi panjang:"));
+                var lebar = parseFloat(prompt("Masukkan lebar persegi panjang:"));
+                var luas = panjang * lebar;
+                document.getElementById("luasPersegiPanjang").innerHTML = "Luas Persegi Panjang adalah: " + luas;
+            }
+        
+            function cekAngka() {
+                var angka = parseFloat(document.getElementById("angka").value);
+                var pesan = "";
+        
+                if (angka > 0) {
+                    pesan = "Angka ini adalah positif.";
+                } else if (angka < 0) {
+                    pesan = "Angka ini adalah negatif.";
+                } else {
+                    pesan = "Angka ini adalah nol.";
+                }
+        
+                document.getElementById("hasilPengecekan").innerHTML = pesan;
+            }
+        </script>
